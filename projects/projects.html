@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <a href="../index.html" class="home">H.V</a>
+        <nav>
+            <ul>
+                <li><a href="projects.html" class="no-decoration">Projects</a></li>
+                <li><a href="../certificates/certificates.html" class="no-decoration">Certificates</a></li>
+                <li><a href="https://github.com/jhenrique04" target="_blank">GitHub</a></li>
+                <li><a href="https://t.me/zeapenas" target="_blank">Telegram</a></li>
+                <li><a href="https://www.linkedin.com/in/j-henrique-viana-100590266/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="page-transition"></div>
+        <main> 
+            <h1>Projects</h1>
+            <h2>Current Focus</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/DocMatcher" target="_blank">
+                        <h3>DocMatcher <i class="fas fa-code"></i></h3>
+                        <p>Cyber risk related document analysis tool that uses machine learning</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/PyGraphs" target="_blank">
+                        <h3>PyGraphs <i class="fa-solid fa-chart-simple"></i></h3>
+                        <p>Open source graphics/charts made with Python</p>
+                    </a>
+                </div>
+            </div>
+            
+            <h2>Other Projects</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/rustyscrapper" target="_blank">
+                        <h3>rustyscrapper <i class="fa-brands fa-github-alt"></i></h3>
+                        <p>Web scraping tool made using Rust</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/weatherinlinebot" target="_blank">
+                        <h3>weatherinlinebot <i class="fa-solid fa-cloud-sun"></i></h3>
+                        <p>Inline weather bot for Telegram</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/steaminlinebot" target="_blank">
+                        <h3>steaminlinebot <i class="fa-brands fa-steam-symbol"></i></h3>
+                        <p>Inline bot that searches games on Steam</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/StudentSync" target="_blank">
+                        <h3>StudentSync <i class="fa-solid fa-book"></i></h3>
+                        <p>An app for the students and managers</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/hyprdots" target="_blank">
+                        <h3>hyprdots <i class="fa-brands fa-linux"></i></h3>
+                        <p>The dotfiles for my Linux environment</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/jhenrique04/word2vec-rs" target="_blank">
+                        <h3>See more projects <i class="fa-solid fa-diagram-project"></i></h3>
+                        <p>All of my projects on GitHub</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script>
+        window.addEventListener("load", function () {
+            var pageTransition = document.querySelector(".page-transition");
+            pageTransition.style.opacity = "0";
+            setTimeout(function () {
+                pageTransition.style.display = "none";
+            }, 1000);
+        });
+    </script>
+    
+</body>
+</html>

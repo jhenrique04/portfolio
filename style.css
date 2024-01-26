@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topbar {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 50px 50px 0px;
+}
+
+.home {
+    font-weight: 700;
+    font-size: 1.7em;
+    font-family: 'Dancing Script'; 
+    margin-right: auto; 
+    margin-left: 60px; 
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.topbar li {
+    margin: 0 10px;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+}
+
+.topbar a {
+    color: #fff;
+    text-decoration: none;
+    filter: grayscale(100%);
+    transition: filter 0.3s linear, opacity 0.3s linear;
+    opacity: 0.4; 
+}
+
+.topbar a:hover {
+    filter: grayscale(0%); 
+    opacity: 1;
+}
+
+.topbar a::after {
+    display: none;
+}
+
+.topbar a:active {
+    color: #fff;
+}
+
+.container {
+    text-align: left;
+    max-width: 650px;
+    padding: 0 10px 0 10px;
+    margin: 20px 30px 20px 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+p {
+    color: #bdbdbd;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #bdbdbd;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+a:hover::after {
+    opacity: 1;
+}
+
+.divisor {
+    border-top: 1px solid rgba(204, 204, 204, 0.2);
+    margin: 25px 250px 25px 250px;
+}
+
+.contacts p {
+    margin-bottom: 0.8em;
+    font-size: 1.2em;
+}
+
+.contacts ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.contacts li {
+    font-size: 1.2em;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 1em;
+}
+
+.contacts a {
+    color: #dddddd;
+    transition: color 0.3s ease;
+}
+
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 1; /* Começa totalmente visível */
+    z-index: 2; /* Certifique-se de que esteja acima de todos os outros elementos */
+    pointer-events: none; /* Impede que cliques ocorram na sobreposição */
+    transition: opacity 1s ease; /* Adicione uma transição de fade */
+}
