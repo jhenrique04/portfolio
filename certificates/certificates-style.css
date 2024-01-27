@@ -7,7 +7,7 @@
 body,
 html {
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -29,9 +29,6 @@ body {
 }
 
 .home {
-  font-weight: 700;
-  font-size: 1.7em;
-  font-family: "Dancing Script";
   margin-right: auto;
   margin-left: 60px;
 }
@@ -180,6 +177,13 @@ a:active {
     justify-content: center;
     align-items: center;
     flex-basis: 100%;
+  }
+
+  .home {
+    margin: 25px 0px 0 40px;
+    display: flex;
+    height: auto;
+    align-items: center;
   }
 
   .topbar ul {

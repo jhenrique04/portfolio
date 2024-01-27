@@ -7,7 +7,7 @@
 body,
 html {
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -29,9 +29,6 @@ body {
 }
 
 .home {
-  font-weight: 700;
-  font-size: 1.7em;
-  font-family: "Dancing Script";
   margin-right: auto;
   margin-left: 60px;
 }
@@ -81,6 +78,7 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 1em;
   font-weight: bold;
+  margin-top: 0.5em;
 }
 
 p {
@@ -92,7 +90,7 @@ p {
 
 a {
   color: #fff;
-  text-decoration: none !important;
+  text-decoration: none;
   position: relative;
 }
 
@@ -164,13 +162,11 @@ a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 0px 10px 0px 10px;
   }
-
-  .container > * {
+  size .container > * {
     flex-basis: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    padding: 0px 5px 0px 5px;
   }
 
   .topbar {
@@ -181,6 +177,13 @@ a:hover::after {
     justify-content: center;
     align-items: center;
     flex-basis: 100%;
+  }
+
+  .home {
+    margin: 25px 0px 0 40px;
+    display: flex;
+    height: auto;
+    align-items: center;
   }
 
   .topbar ul {
@@ -197,11 +200,24 @@ a:hover::after {
     align-items: center;
   }
 
+  .contacts {
+    margin-top: 1.5em;
+  }
+
   .contacts a {
-    font-size: 0.8em;
+    font-size: 0.7em;
+  }
+
+  .contacts li {
+    margin-bottom: 0.2em;
+  }
+
+  .contacts p:first-child {
+    margin-bottom: 0em;
   }
 
   .contacts p {
     font-size: 1em;
+    margin-bottom: 2em;
   }
 }
