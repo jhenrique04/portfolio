@@ -161,7 +161,7 @@ a:hover::after {
     font-size: 2.5em;
     margin-bottom: 0.3em;
     font-weight: bold;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
   }
 
   size .container > * {
@@ -170,7 +170,7 @@ a:hover::after {
   }
 
   .topbar {
-    margin: 2em 0px 20px 0px;
+    margin: 1.5em 0px 0em 0px;
     font-size: 1.3em;
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +181,7 @@ a:hover::after {
   }
 
   .home {
-    margin: 0px 0px 0px 0px;
+    margin: 0 auto;
     display: flex;
     height: auto;
     align-items: center;
