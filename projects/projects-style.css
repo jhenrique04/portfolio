@@ -101,7 +101,6 @@ h2 {
   background-color: rgba(0, 0, 0, 0);
   padding: 20px;
   margin-bottom: 0px;
-  border-radius: 50px;
   opacity: 1;
   transition: background-color 0.5s ease, transform 0.5s ease, color 0.5s ease,
     opacity 0.5s ease;
@@ -160,16 +159,9 @@ h2 {
   transition: opacity 1s ease;
 }
 
-a:focus {
-  outline: none;
-}
-
-a:active {
-  outline: none;
-}
-
 @media screen and (max-width: 600px) {
   .topbar {
+    margin: 2em 0px 20px 0px;
     font-size: 1.3em;
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +172,7 @@ a:active {
   }
 
   .home {
-    margin: 25px 0px 0 40px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     height: auto;
     align-items: center;
@@ -194,9 +186,26 @@ a:active {
   }
 
   .topbar li {
-    margin: 10px 0px 0 40px;
+    margin: 10px 0px 0px 0px;
     height: auto;
     display: flex;
     align-items: center;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    margin-top: 0em;
+  }
+  .card {
+    width: 300px;
+    padding: 0px;
+  }
+
+  .card-container {
+    margin-top: 0.5em;
+    margin-bottom: 20px;
   }
 }

@@ -94,14 +94,6 @@ a {
   position: relative;
 }
 
-a:focus {
-  outline: none;
-}
-
-a:active {
-  outline: none;
-}
-
 a::after {
   content: "";
   position: absolute;
@@ -164,12 +156,21 @@ a:hover::after {
     justify-content: flex-start;
     margin: 0px 10px 0px 10px;
   }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    margin-top: 0.5em;
+  }
+
   size .container > * {
     flex-basis: 100%;
     padding: 0px 5px 0px 5px;
   }
 
   .topbar {
+    margin: 2em 0px 20px 0px;
     font-size: 1.3em;
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +181,7 @@ a:hover::after {
   }
 
   .home {
-    margin: 25px 0px 0 40px;
+    margin: 0px 0px 0px 0px;
     display: flex;
     height: auto;
     align-items: center;
@@ -194,7 +195,7 @@ a:hover::after {
   }
 
   .topbar li {
-    margin: 10px 0px 0 40px;
+    margin: 10px 0px 0px 0px;
     height: auto;
     display: flex;
     align-items: center;
